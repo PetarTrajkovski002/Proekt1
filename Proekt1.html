@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Веб страна</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <header>
+            <h1><em>Mobilex</em></h1>
+        </header>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1 style="color: white;">Почитувани, добредојдовте во <p style="color: orangered;">Mobilex,</p> нашата online-продавница за мобилни телефони. Ве молиме изберете една од приложените категории на производи:</h1>
+        <div id="tabela"><table style="color: white; align-content: center;" class="center">
+            <tr>
+                <th><em>Android</em> телефони</th>
+                <th><em>iPhone</em> телефони</th>
+                <th>Галантерија</th>
+            </tr>
+            <tr>
+                <td style="padding-right:20px"><a href="Android.html"><img src="android.jpg" alt="Android"></a></td>
+                <td style="padding-right:20px"><a href="iPhone.html"><img src="iphone.jpg" alt="iphone"></a></td>
+                <td><a href="galanterija.html"><img src="charger.jpg" alt="iphone"></a></td>
+            </tr>
+        </table></div>
+        <br>
+        <br>
+        <br>
+        <h2 style="margin-left: 10px; color: #fff;">Доколку Ви се допадна страницата, ставете <em>Like</em> <button onclick="displaycount()"><img id="heart" src="srce.jpg" width="60" height="60" alt="srce"></button><p id="carrier" style="color: #fff;">0</p></h2>
+        <footer>
+
+            <h2>&copy; Copyright Reserved.</h2>
+            <p>Контакт:<br>Адреса: „Партизански Одреди 64б/2-8", Број: 075283490, e-mail: mtel@gmail.com</p>
+        </footer>
+    </body>
+    <script>
+        var count=(function()
+        {
+            var counter=0;
+            return function() {return counter+=1;}
+        })();
+        function displaycount()
+        {
+            document.getElementById("carrier").innerHTML=count();
+        }
+    </script>
+</html>

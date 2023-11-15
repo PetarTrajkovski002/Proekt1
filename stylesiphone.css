@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+
+}
+.header
+{
+    
+    font-size: large;
+    border: solid 2px #000;
+    color: #000000;
+    background-color: red;
+    padding: 5px;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 5px;    
+}
+body    
+{   
+    background-color: lightcoral;
+    margin-left: 20px;
+}
+table, th, td
+{
+    border: 1px solid black;
+    width: 50%;
+    align-self: center;
+}
+

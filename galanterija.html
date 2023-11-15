@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="stylegalanterija.css">
+        <title>Кабли, адаптери и додатоци</title>
+    </head>
+    <body>
+        <div class="header">
+            <h2>Галантерија</h2>
+        </div>
+        <h2></h2>
+        <table class="center">
+            <tr>
+                <td>Полнач за Андроид телефон со стандарден USB приклучок <br>Цена:200 ден </td>
+                <td><img src="usbtipa.jpg" width="200" height="200" alt="USB кабел"></td>
+            </tr>
+            <tr>
+                <td>Полнач за андроид телефон со type-C USB приклучок<br><br>Цена:350 ден </td>
+                <td><img src="tip C.jpg" width="200" height="200" alt="USB type C"></td>
+                
+            </tr>
+            
+            <tr>
+                <td>Полнач за iPhone телефон<br>Цена:600 ден </td>
+                <td><img src="iphone polnac.jpg" width="200" height="200" alt="iPhone полнач"></td>
+            </tr>
+            <tr>
+                <td>Полнач за штекер<br>Цена: 500 ден</td>
+                <td><img src="polnac vo dzid.jpg" width="200" height="200" alt="Polnac vo dzid"></td>
+            </tr>
+            
+        </table>
+        <br>
+
+        <form action="Domashna rabota 2.html" method="get">
+            <table style="width: 50%;">
+                <th colspan="2">Форма за нарачка</th>
+                <tr>
+                    <td align="right">Име</td>
+                    <td align="left">
+                        <label for ="name"></label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name here" required>
+
+                    </td>
+
+                </tr>
+                <tr>
+                    <td align="right">Адреса</td>
+                    <td align="left">
+                        <label for="address"></label>
+                        <input type="text" name="address" id="address" placeholder="Enter your address here" required>
+                    </td>
+                    
+                    
+                </tr>
+                <tr>
+                    <td align="right">Телефонски број</td>
+                    <td align="left">
+                        <label for="phone"></label>
+                        <input type="text" name="phone" id="phone" placeholder="Enter your phone number here" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Мобилен телефон</td>
+                    <td align="left">
+                        <label for="t">USB со стандарден приклучок</label>
+                        <input type="radio" name="t" id="t">
+                        <label for="t">USB со type C приклучок</label>
+                        <input type="radio" name="t" id="t">
+                        <label for="t">Кабел за iPhone</label>
+                        <input type="radio" name="t" id="t">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Начин на плаќање</td>
+                    <td align="left">
+                        <label for ="b"></label>
+                        <select id="b" name="b">
+                            <option value="cc">Кеш</option>
+                            <option value="f">Картичка</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </body>
+</html>

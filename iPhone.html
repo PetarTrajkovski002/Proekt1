@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="stylesiphone.css">
+        <title>Iphone телефони</title>
+    </head>
+    <body>
+        <div class="header">
+            <h2>iPhone телефони</h2>
+        </div>
+        <h2>Изберете го вашиот нов iPhone телефон:</h2>
+        <table class="center">
+            <tr>
+                <td>Телефон</td>
+                <td>Фотографија</td>
+                <td>Мислење</td>
+                
+            </tr>
+            <tr>
+                <td>Телефон: iPhone 13 <br>Процесор:Hexa-core (2x3.23 GHz Avalanche + 4x1.82 GHz Blizzard)<br>RAM: 4GB RAM<br>Storage: 128GB<br>Camera:	12 MP, f/1.6, 26mm (wide), 1.7µm, dual pixel PDAF, sensor-shift OIS<br>Selfie Camera: 12MP<br><br>Цена:50000 ден <br><a href = "https://www.gsmarena.com/apple_iphone_13-11103.php">Линк за подетални информации</a></td>
+                <td><img src="/1641820529-24.jpg" width="300px" height="300px" alt="iPhone 13"></td>
+                <td>
+                    <div class="comment=box">
+                        <p>Leave a comment</p>
+                        <form class="comment-form" onsubmit="myfunc(event)">
+                            <input type="text" id="name2" placeholder="Име">
+                            <input type="email" id="email2" placeholder="Email">
+                            <input type="text" id="instagram2" placeholder="Instagram profile">
+                            <textarea rows="10" id="tekst2" placeholder="Внесете го коментарот тука"></textarea>
+                            <button type="submit">Постирај коментар</button>
+                        </form>
+                        <script type="text/javascript">
+                            function myfunc(event)
+                            {
+                                event.preventDefault();
+                                var full_name2=document.getElementById("name2").value;
+                                var email_id2=document.getElementById("email2").value;
+                                var instagram_id2=document.getElementById("instagram2").value;
+                                var tekst_id2=document.getElementById("tekst2").value;
+
+                                localStorage.setItem('ls_name2',full_name2);
+                                localStorage.setItem('ls_email2',email_id2);
+                                localStorage.setItem('ls_instagram2', instagram_id2);
+                                localStorage.setItem('ls_tekst2',tekst_id2);
+                                
+
+                            }
+                        </script>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Телефон: iPhone SE<br>Процесор:	Hexa-core (2x3.22 GHz Avalanche + 4x1.82 GHz Blizzard)<br>RAM:4GB RAM<br>Storage: 64GB<br>Camera:12 MP, f/1.8 (wide), PDAF, OIS<br>Selfie Camera: 7MP<br><br>Цена: 18000 ден<br><a href="https://www.gsmarena.com/apple_iphone_se_(2022)-11410.php">Линк за подетални информации</a></td>
+                <td><img src="iphone se2.jpg" width="300px" height="300px" alt="Huawei nova 5T"></td>
+                <td>
+                    <div class="comment=box">
+                        <p>Leave a comment</p>
+                        <form class="comment-form" onsubmit="myfunc(event)">
+                            <input type="text" id="name3" placeholder="Име">
+                            <input type="email" id="email3" placeholder="Email">
+                            <input type="text" id="instagram3" placeholder="Instagram profile">
+                            <textarea rows="10" id="tekst3" placeholder="Внесете го коментарот тука"></textarea>
+                            <button type="submit">Постирај коментар</button>
+                        </form>
+                        <script type="text/javascript">
+                            function myfunc(event)
+                            {
+                                event.preventDefault();
+                                var full_name3=document.getElementById("name3").value;
+                                var email_id3=document.getElementById("email3").value;
+                                var instagram_id3=document.getElementById("instagram3").value;
+                                var tekst_id3=document.getElementById("tekst3").value;
+
+                                localStorage.setItem('ls_name3',full_name3);
+                                localStorage.setItem('ls_email3',email_id3);
+                                localStorage.setItem('ls_instagram3',instagram_id3);
+                                localStorage.setItem('ls_tekst3',tekst_id3);
+                                
+
+                            }
+                        </script>
+                    </div>
+                </td>
+            </tr>
+            
+            
+        </table>
+        <br>
+
+        <form action="Domashna rabota 2.html" method="get">
+            <table style="width: 50%;">
+                <th colspan="2">Форма за нарачка</th>
+                <tr>
+                    <td align="right">Име</td>
+                    <td align="left">
+                        <label for ="name"></label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name here" required>
+
+                    </td>
+
+                </tr>
+                <tr>
+                    <td align="right">Адреса</td>
+                    <td align="left">
+                        <label for="address"></label>
+                        <input type="text" name="address" id="address" placeholder="Enter your address here" required>
+                    </td>
+                    
+                    
+                </tr>
+                <tr>
+                    <td align="right">Телефонски број</td>
+                    <td align="left">
+                        <label for="phone"></label>
+                        <input type="text" name="phone" id="phone" placeholder="Enter your phone number here" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Мобилен телефон</td>
+                    <td align="left">
+                        <label for="t">Iphone 13</label>
+                        <input type="radio" name="t" id="t">
+                        <label for="t">Iphone SE 2022</label>
+                        <input type="radio" name="t" id="t">
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Начин на плаќање</td>
+                    <td align="left">
+                        <label for ="b"></label>
+                        <select id="b" name="b">
+                            <option value="cc">Кеш</option>
+                            <option value="f">Картичка</option>
+                           
+                        </select>
+                    </td>
+                </tr>      
+            </table>
+            <br>
+            <input type="submit">
+            <input type="reset">
+        </form>
+        <h2><em>Слика од вашиот нов производ</em></h2>
+        <p><input type="file" accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+        <p><label for="file" style="cursor: pointer;">Поставете фотографија</label></p>
+        <p><img id="petar" width="200"/></p>
+        <script>
+        var loadFile = function(event) {
+            var image = document.getElementById('petar');
+            image.src = URL.createObjectURL(event.target.files[0]);
+            
+        };
+        </script>
+    </body>
+</html>
